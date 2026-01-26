@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="fade-in">
+    <h1>Aadya Mallik</h1>
+    <p>Frontend Developer | Student</p>
+    <a href="autoCV.pdf" download class="btn">Download Resume</a>
+</header>
+
+<nav>
+    <button id="darkToggle">🌙</button>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="fade-in">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-card">
+        <img src="profile.jpg" class="profile-pic">
+        <h3 class="about-name">Aadya Mallik</h3>
+        <p class="about-role"><span id="typing"></span></p>
+
+        <div class="social-icons">
+            <a href="https://github.com/aadya-mallik" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg">
+            </a>
+        </div>
+
+        <p>
+                        I am a passionate and motivated frontend web developer with a strong
+            interest in building clean, responsive, and user-friendly websites.
+            I have hands-on experience with HTML, CSS, and JavaScript.
+            I enjoy creating projects like calculators and music players, which
+            help me understand core concepts such as DOM manipulation, event
+            handling, and responsive design.
+            I am eager to learn new technologies, improve my coding skills, and
+            gain real-world experience through internships and practical projects.
+        </p>
+    </div>
+</section>
+
+<section id="skills" class="skills-section">
+    <h2 class="section-title">Skills</h2>
+
+    <!-- Technical Skills -->
+    <div class="skill-bar">
+        <span>HTML</span>
+        <div class="progress">
+            <div class="progress-fill" style="width:90%">90%</div>
+        </div>
+    </div>
+
+    <div class="skill-bar">
+        <span>CSS</span>
+        <div class="progress">
+            <div class="progress-fill" style="width:90%">90%</div>
+        </div>
+    </div>
+
+    <div class="skill-bar">
+        <span>JavaScript</span>
+        <div class="progress">
+            <div class="progress-fill" style="width:80%">80%</div>
+        </div>
+    </div>
+
+    <div class="skill-bar">
+        <span>GitHub</span>
+        <div class="progress">
+            <div class="progress-fill" style="width:50%">50%</div>
+        </div>
+    </div>
+
+    <!-- Professional Skills -->
+    <h2 class="section-title">Professional Skills</h2>
+
+    <div class="circle-container">
+        <div class="circle" data-percent="90">
+            <span>90%</span>
+            <p>Team Work</p>
+        </div>
+
+        <div class="circle" data-percent="80">
+            <span>80%</span>
+            <p>Creativity</p>
+        </div>
+
+        <div class="circle" data-percent="70">
+            <span>70%</span>
+            <p>Communication</p>
+        </div>
+
+        <div class="circle" data-percent="55">
+            <span>55%</span>
+            <p>Project Management</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <h3>Calculator</h3>
+            <p>Basic calculator using HTML, CSS & JS</p>
+            <a href="https://aadya-mallik.github.io/Calculator/" class="project-btn">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Music Player</h3>
+            <p>Music player with play & pause</p>
+            <a href="https://aadya-mallik.github.io/music-player/" class="project-btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section fade-in">
+    <h2 class="contact-title">Contact Me</h2>
+    <p class="contact-subtitle">Feel free to reach out</p>
+
+    <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Your Subject" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="status"></p>
+</section>
+
+<footer>
+    <p>© 2026 Aadya Mallik</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
